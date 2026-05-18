@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina | Futuristic Dental Care</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Lenis Smooth Scroll CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Loading Screen -->
+    <div class="loader">
+        <div class="loader-logo">LUMINA</div>
+        <div class="loader-progress"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <i class="ph ph-tooth"></i>
+                Lumina
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#team">Our Team</a></li>
+                <li><a href="#gallery">Results</a></li>
+            </ul>
+            <a href="#booking" class="btn btn-primary nav-btn">Book Appointment</a>
+            
+            <button class="mobile-menu-btn">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <canvas id="hero-canvas"></canvas>
+            <div class="hero-content">
+                <div class="hero-badge">Next-Gen Dentistry</div>
+                <h1 class="hero-title">Advanced Dental Care with a <span>Gentle Touch</span></h1>
+                <p class="hero-subtitle">Experience the future of dentistry. We combine cutting-edge technology with unparalleled comfort to give you the perfect smile.</p>
+                <div class="hero-cta">
+                    <a href="#booking" class="btn btn-primary">Book Appointment <i class="ph ph-arrow-right"></i></a>
+                    <a href="#services" class="btn btn-secondary">Explore Services</a>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <span>Scroll to explore</span>
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Section -->
+        <section id="booking" class="booking section-padding">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2>Schedule Your Visit</h2>
+                    <p>Book your appointment in less than 2 minutes.</p>
+                </div>
+                
+                <div class="booking-wrapper">
+                    <form class="booking-form" id="bookingForm">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label><i class="ph ph-user"></i> Full Name</label>
+                                <input type="text" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label><i class="ph ph-phone"></i> Phone Number</label>
+                                <input type="tel" placeholder="+1 (555) 000-0000" required>
+                            </div>
+                            <div class="form-group">
+                                <label><i class="ph ph-tooth"></i> Service Needed</label>
+                                <div class="select-wrapper">
+                                    <select required>
+                                        <option value="" disabled selected>Select a service</option>
+                                        <option value="cleaning">General Cleaning</option>
+                                        <option value="whitening">Teeth Whitening</option>
+                                        <option value="implants">Dental Implants</option>
+                                        <option value="braces">Invisalign & Braces</option>
+                                        <option value="consultation">Free Consultation</option>
+                                    </select>
+                                    <i class="ph ph-caret-down"></i>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label><i class="ph ph-calendar"></i> Preferred Date</label>
+                                <input type="date" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 mt-4">Confirm Appointment</button>
+                    </form>
+                    
+                    <div class="booking-info">
+                        <div class="info-card">
+                            <i class="ph ph-clock text-accent"></i>
+                            <div>
+                                <h3>Opening Hours</h3>
+                                <p>Mon - Fri: 8:00 AM - 8:00 PM</p>
+                                <p>Sat: 9:00 AM - 4:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <i class="ph ph-phone-call text-accent"></i>
+                            <div>
+                                <h3>Emergency Care</h3>
+                                <p>24/7 Dental Emergency</p>
+                                <p class="text-bold">+1 (800) LUMINA-9</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section-padding">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image">
+                        <!-- We will use the generated clinic interior image here -->
+                        <img src="file:///C:/Users/Jagadish/.gemini/antigravity/brain/c075a5a8-69b6-4c25-a097-b3dd50f76bca/clinic_interior_1777460682172.png" alt="Futuristic Clinic Interior" class="parallax-img">
+                        <div class="glass-float-card">
+                            <i class="ph ph-star-fill"></i>
+                            <div class="stats-text">
+                                <span class="counter" data-target="4.9">0</span>
+                                <p>Average Rating</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-content">
+                        <div class="section-header">
+                            <span class="badge">About Lumina</span>
+                            <h2>Redefining the Dental Experience</h2>
+                            <p>We've eliminated the anxiety associated with dental visits. Our state-of-the-art clinic uses AI diagnostics, painless laser treatments, and a soothing environment to ensure you leave with a brilliant smile.</p>
+                        </div>
+                        
+                        <div class="stats-grid mt-4">
+                            <div class="stat-item">
+                                <h3 class="counter" data-target="15">0</h3>
+                                <p>Years Experience</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3 class="counter" data-target="12000">0</h3><span>+</span>
+                                <p>Happy Smiles</p>
+                            </div>
+                            <div class="stat-item">
+                                <h3 class="counter" data-target="5">0</h3>
+                                <p>Expert Doctors</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services section-padding">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <span class="badge">Our Expertise</span>
+                    <h2>Comprehensive Care</h2>
+                </div>
+                
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="ph ph-sparkle"></i>
+                        </div>
+                        <h3>Teeth Whitening</h3>
+                        <p>Advanced laser whitening technology that brightens your smile up to 8 shades in just 45 minutes.</p>
+                        <a href="#" class="service-link">Learn More <i class="ph ph-arrow-right"></i></a>
+                    </div>
+                    
+                    <!-- Service 2 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="ph ph-align-center-horizontal"></i>
+                        </div>
+                        <h3>Invisible Aligners</h3>
+                        <p>Custom 3D-printed clear aligners for precise, comfortable, and discreet teeth straightening.</p>
+                        <a href="#" class="service-link">Learn More <i class="ph ph-arrow-right"></i></a>
+                    </div>
+                    
+                    <!-- Service 3 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="ph ph-tooth"></i>
+                        </div>
+                        <h3>Dental Implants</h3>
+                        <p>Permanent, natural-looking tooth replacements placed using AI-guided surgical precision.</p>
+                        <a href="#" class="service-link">Learn More <i class="ph ph-arrow-right"></i></a>
+                    </div>
+                    
+                    <!-- Service 4 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="ph ph-first-aid"></i>
+                        </div>
+                        <h3>Painless Cleaning</h3>
+                        <p>Ultrasonic plaque removal combined with guided biofilm therapy for a deep, gentle clean.</p>
+                        <a href="#" class="service-link">Learn More <i class="ph ph-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Service 5 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="ph ph-heartbeat"></i>
+                        </div>
+                        <h3>Root Canal Therapy</h3>
+                        <p>Microscopic endodontics ensuring precise, virtually painless treatment to save your natural tooth.</p>
+                        <a href="#" class="service-link">Learn More <i class="ph ph-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Service 6 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="ph ph-smiley"></i>
+                        </div>
+                        <h3>Veneers</h3>
+                        <p>Ultra-thin porcelain veneers designed with digital smile planning for a flawless aesthetic.</p>
+                        <a href="#" class="service-link">Learn More <i class="ph ph-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Service 7 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="ph ph-shield-check"></i>
+                        </div>
+                        <h3>Gum Health</h3>
+                        <p>Laser periodontal therapy to effectively treat gum disease and promote tissue regeneration.</p>
+                        <a href="#" class="service-link">Learn More <i class="ph ph-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Service 8 -->
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="ph ph-baby"></i>
+                        </div>
+                        <h3>Pediatric Dentistry</h3>
+                        <p>A fun, stress-free environment tailored to protect and care for your child's developing smile.</p>
+                        <a href="#" class="service-link">Learn More <i class="ph ph-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section id="team" class="team section-padding">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <span class="badge">The Experts</span>
+                    <h2>Meet Your Doctors</h2>
+                </div>
+                
+                <div class="team-grid">
+                    <!-- Doctor 1 -->
+                    <div class="team-card tilt-card">
+                        <div class="team-img-wrapper">
+                            <img src="file:///C:/Users/Jagadish/.gemini/antigravity/brain/c075a5a8-69b6-4c25-a097-b3dd50f76bca/doctor_female_1777460698205.png" alt="Dr. Sarah Jenkins">
+                            <div class="team-socials">
+                                <a href="#"><i class="ph ph-linkedin-logo"></i></a>
+                                <a href="#"><i class="ph ph-twitter-logo"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h3>Dr. Sarah Jenkins</h3>
+                            <p>Cosmetic Dentistry</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Doctor 2 -->
+                    <div class="team-card tilt-card">
+                        <div class="team-img-wrapper">
+                            <img src="file:///C:/Users/Jagadish/.gemini/antigravity/brain/c075a5a8-69b6-4c25-a097-b3dd50f76bca/doctor_male_1777460716075.png" alt="Dr. Michael Chen">
+                            <div class="team-socials">
+                                <a href="#"><i class="ph ph-linkedin-logo"></i></a>
+                                <a href="#"><i class="ph ph-twitter-logo"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h3>Dr. Michael Chen</h3>
+                            <p>Orthodontics & Implantology</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology Section (New 1) -->
+        <section id="technology" class="technology section-padding">
+            <div class="container">
+                <div class="about-grid" style="direction: rtl;">
+                    <div class="about-image" style="direction: ltr;">
+                        <!-- Reusing the interior image, or we could just use a colored div with glassmorphism for tech -->
+                        <div style="width: 100%; height: 100%; background: var(--accent-gradient); border-radius: 24px; display: flex; align-items: center; justify-content: center; box-shadow: var(--glass-shadow); position: relative; overflow: hidden;">
+                            <i class="ph ph-cpu text-white" style="font-size: 8rem; color: white; opacity: 0.8; z-index: 2;"></i>
+                            <div style="position: absolute; width: 200%; height: 200%; background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 50%); animation: rotate 10s linear infinite;"></div>
+                        </div>
+                    </div>
+                    <div class="about-content" style="direction: ltr;">
+                        <div class="section-header">
+                            <span class="badge">Future Tech</span>
+                            <h2>AI-Powered Precision</h2>
+                            <p>Our clinic is equipped with the latest advancements in dental technology. From 3D intraoral scanners that replace messy impressions, to AI diagnostics that catch issues the human eye might miss.</p>
+                        </div>
+                        <ul class="tech-list" style="margin-top: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                            <li style="display: flex; align-items: center; gap: 1rem;"><i class="ph-fill ph-check-circle text-accent" style="font-size: 1.5rem;"></i> <strong>3D CBCT Scans:</strong> Complete oral visualization in seconds.</li>
+                            <li style="display: flex; align-items: center; gap: 1rem;"><i class="ph-fill ph-check-circle text-accent" style="font-size: 1.5rem;"></i> <strong>Laser Dentistry:</strong> Painless, scalpel-free treatments.</li>
+                            <li style="display: flex; align-items: center; gap: 1rem;"><i class="ph-fill ph-check-circle text-accent" style="font-size: 1.5rem;"></i> <strong>Virtual Smile Design:</strong> See your results before we start.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing/Membership Section (New 2) -->
+        <section id="pricing" class="pricing section-padding" style="background: white;">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <span class="badge">Transparent Plans</span>
+                    <h2>Lumina Memberships</h2>
+                    <p>No insurance? No problem. Enjoy premium care with our straightforward membership plans.</p>
+                </div>
+                
+                <div class="pricing-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <!-- Plan 1 -->
+                    <div class="pricing-card" style="border: 1px solid rgba(0,0,0,0.05); padding: 3rem; border-radius: 24px; box-shadow: 0 10px 30px rgba(0,0,0,0.02); text-align: center;">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Basic Care</h3>
+                        <div style="font-size: 3rem; font-weight: 700; color: var(--accent-blue); margin-bottom: 2rem;">$29<span style="font-size: 1rem; color: var(--text-secondary);">/mo</span></div>
+                        <ul style="text-align: left; margin-bottom: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                            <li><i class="ph ph-check text-accent"></i> 2 Routine Cleanings</li>
+                            <li><i class="ph ph-check text-accent"></i> Annual X-Rays</li>
+                            <li><i class="ph ph-check text-accent"></i> 10% off treatments</li>
+                        </ul>
+                        <button class="btn btn-secondary w-100" style="justify-content: center;">Choose Basic</button>
+                    </div>
+
+                    <!-- Plan 2 -->
+                    <div class="pricing-card" style="border: 2px solid var(--accent-blue); padding: 3rem; border-radius: 24px; box-shadow: 0 20px 40px rgba(0,102,255,0.1); text-align: center; position: relative; transform: translateY(-10px);">
+                        <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--accent-gradient); color: white; padding: 0.5rem 1.5rem; border-radius: 20px; font-weight: 600; font-size: 0.8rem;">MOST POPULAR</div>
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Premium Care</h3>
+                        <div style="font-size: 3rem; font-weight: 700; color: var(--accent-blue); margin-bottom: 2rem;">$49<span style="font-size: 1rem; color: var(--text-secondary);">/mo</span></div>
+                        <ul style="text-align: left; margin-bottom: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                            <li><i class="ph ph-check text-accent"></i> 3 Premium Cleanings</li>
+                            <li><i class="ph ph-check text-accent"></i> Annual 3D Scans</li>
+                            <li><i class="ph ph-check text-accent"></i> 1 Free Whitening Session</li>
+                            <li><i class="ph ph-check text-accent"></i> 20% off treatments</li>
+                        </ul>
+                        <button class="btn btn-primary w-100" style="justify-content: center;">Choose Premium</button>
+                    </div>
+
+                    <!-- Plan 3 -->
+                    <div class="pricing-card" style="border: 1px solid rgba(0,0,0,0.05); padding: 3rem; border-radius: 24px; box-shadow: 0 10px 30px rgba(0,0,0,0.02); text-align: center;">
+                        <h3 style="font-size: 1.5rem; margin-bottom: 1rem;">Family Plan</h3>
+                        <div style="font-size: 3rem; font-weight: 700; color: var(--accent-blue); margin-bottom: 2rem;">$99<span style="font-size: 1rem; color: var(--text-secondary);">/mo</span></div>
+                        <ul style="text-align: left; margin-bottom: 2rem; display: flex; flex-direction: column; gap: 1rem;">
+                            <li><i class="ph ph-check text-accent"></i> Covers up to 4 members</li>
+                            <li><i class="ph ph-check text-accent"></i> Free pediatric exams</li>
+                            <li><i class="ph ph-check text-accent"></i> Annual X-Rays included</li>
+                            <li><i class="ph ph-check text-accent"></i> 15% off treatments</li>
+                        </ul>
+                        <button class="btn btn-secondary w-100" style="justify-content: center;">Choose Family</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="testimonials section-padding">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <span class="badge">Testimonials</span>
+                    <h2>Patient Stories</h2>
+                </div>
+                
+                <div class="testimonial-carousel">
+                    <!-- Since we don't have a carousel library, we'll use CSS grid/flex for a modern layout -->
+                    <div class="testimonial-grid">
+                        <div class="testimonial-card">
+                            <div class="stars">
+                                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                            </div>
+                            <p>"The most futuristic clinic I've ever seen. The 3D scan took seconds, and the laser cleaning was completely painless. Incredible experience."</p>
+                            <div class="author">
+                                <div class="author-avatar">E</div>
+                                <div>
+                                    <h4>Emily R.</h4>
+                                    <span>Invisalign Patient</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="stars">
+                                <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                            </div>
+                            <p>"Dr. Chen is brilliant. I was terrified of implants, but the AI-guided surgery made it quick and recovery was a breeze. Highly recommended."</p>
+                            <div class="author">
+                                <div class="author-avatar">J</div>
+                                <div>
+                                    <h4>James T.</h4>
+                                    <span>Implant Patient</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section (New 3) -->
+        <section id="faq" class="faq section-padding">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <span class="badge">Got Questions?</span>
+                    <h2>Frequently Asked Questions</h2>
+                </div>
+                
+                <div class="faq-container" style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 1rem;">
+                    <details class="faq-item" style="background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 15px rgba(0,0,0,0.03); cursor: pointer;">
+                        <summary style="font-weight: 600; font-size: 1.2rem; color: var(--text-primary); list-style: none; display: flex; justify-content: space-between; align-items: center;">
+                            Do you accept my insurance? <i class="ph ph-caret-down"></i>
+                        </summary>
+                        <p style="margin-top: 1rem; color: var(--text-secondary); line-height: 1.6;">We accept most major PPO insurance plans. Our front desk team will happily verify your benefits prior to your appointment to ensure you understand your coverage fully. We also offer our Lumina Membership for uninsured patients.</p>
+                    </details>
+                    
+                    <details class="faq-item" style="background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 15px rgba(0,0,0,0.03); cursor: pointer;">
+                        <summary style="font-weight: 600; font-size: 1.2rem; color: var(--text-primary); list-style: none; display: flex; justify-content: space-between; align-items: center;">
+                            Is the laser cleaning really painless? <i class="ph ph-caret-down"></i>
+                        </summary>
+                        <p style="margin-top: 1rem; color: var(--text-secondary); line-height: 1.6;">Yes! Our guided biofilm therapy uses a warm mix of air, water, and specialized powder to gently remove plaque without the scraping and sensitivity of traditional cleanings.</p>
+                    </details>
+                    
+                    <details class="faq-item" style="background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 15px rgba(0,0,0,0.03); cursor: pointer;">
+                        <summary style="font-weight: 600; font-size: 1.2rem; color: var(--text-primary); list-style: none; display: flex; justify-content: space-between; align-items: center;">
+                            How long does teeth whitening take? <i class="ph ph-caret-down"></i>
+                        </summary>
+                        <p style="margin-top: 1rem; color: var(--text-secondary); line-height: 1.6;">Our in-office advanced laser whitening takes approximately 45 minutes to an hour. You can expect your teeth to be up to 8 shades whiter by the time you leave our clinic.</p>
+                    </details>
+                    
+                    <details class="faq-item" style="background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 15px rgba(0,0,0,0.03); cursor: pointer;">
+                        <summary style="font-weight: 600; font-size: 1.2rem; color: var(--text-primary); list-style: none; display: flex; justify-content: space-between; align-items: center;">
+                            What if I have an emergency after hours? <i class="ph ph-caret-down"></i>
+                        </summary>
+                        <p style="margin-top: 1rem; color: var(--text-secondary); line-height: 1.6;">We have a 24/7 emergency line available for our patients. Simply call our main number, and follow the prompts to be connected to the on-call dentist.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <i class="ph ph-tooth"></i>
+                        Lumina
+                    </a>
+                    <p>Advanced dental care with a gentle touch. Experience the future of dentistry today.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="ph ph-instagram-logo"></i></a>
+                        <a href="#"><i class="ph ph-facebook-logo"></i></a>
+                        <a href="#"><i class="ph ph-twitter-logo"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Treatments</a></li>
+                        <li><a href="#team">Our Doctors</a></li>
+                        <li><a href="#booking">Book Appointment</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><i class="ph ph-map-pin"></i> 123 Future Tech Blvd, NY 10001</li>
+                        <li><i class="ph ph-phone"></i> +1 (800) LUMINA-9</li>
+                        <li><i class="ph ph-envelope"></i> hello@luminadental.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Lumina Dental. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Lenis -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    
+    <!-- Three.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
